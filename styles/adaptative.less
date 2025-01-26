@@ -1,0 +1,540 @@
+@media screen and (max-width: 1199px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main__container {
+    justify-content: center;
+
+    .main__image {
+      width: 520px;
+      height: auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  #about__us {
+    .about-us__container {
+      .about-us__image {
+        max-width: 302px;
+        object-fit: cover;
+        align-self: center;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+
+  #range {
+    .macaroons {
+      display: grid;
+      grid-template-areas: "macaroon macaroon"
+        "macaroon macaroon";
+      grid-row-gap: 130px;
+      justify-content: center;
+    }
+  }
+
+
+}
+
+
+@media screen  and (max-width: 1023px) {
+
+
+  .about__us-image {
+    max-width: 50%;
+  }
+  #order {
+    .order__container {
+      .order__form {
+        max-width: 406px;
+        margin-left: 60px;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+  #order {
+    .order__container {
+      .order__form {
+        order: 1;
+        margin-left: 0;
+      }
+
+      .order__image {
+        order: 2;
+        align-self: flex-end;
+        width: 85%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .strawberry__top {
+        top: 240px;
+        left: 349px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .header .logo__phone {
+    display: none;
+  }
+
+  #about__us {
+    padding: 119px 0 30px 0;
+
+    .about-us__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      .about__us-info {
+        justify-content: center;
+
+        .about-us__text {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  #advantages {
+    .advantages__container {
+      grid-template-areas: "advantage advantage" "advantage advantage";
+      gap: 80px 54px;
+      margin: 0 auto;
+
+      .advantage {
+        display: grid;
+        grid-template-areas: "round" "title" "text";
+        justify-self: center;
+        align-self: center;
+        margin: auto;
+        text-align: center;
+
+        .advantage__round {
+          margin: auto;
+        }
+
+      }
+    }
+  }
+
+
+  .macaroon {
+    margin: auto;
+  }
+
+  #order {
+    .order__container {
+      justify-content: center;
+
+      .strawberry__bottom {
+        top: 166px;
+        right: 108px;
+      }
+    }
+  }
+
+
+  .present {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .main {
+    .main__container {
+      flex-wrap: wrap;
+
+      .main__image {
+        margin-right: 0;
+      }
+
+      .main__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 38px;
+      }
+    }
+  }
+
+
+  #range {
+    .macaroons {
+      grid-template-areas: "macaroon"
+        "macaroon" " macaroon" "macaroon";
+      align-items: center;
+      justify-content: center;
+
+    }
+  }
+
+
+  #order {
+    .order__container {
+      .order__image {
+        display: none;
+      }
+
+      .order__form {
+        #form {
+          .order__cart {
+            .order__input {
+              width: 343px;
+            }
+
+            .error__input {
+              width: 343px;
+            }
+
+            .order__action {
+              .order__btn {
+                width: 343px;
+              }
+            }
+
+          }
+        }
+      }
+
+      .strawberry__top {
+        top: 107px;
+        left: 215px;
+      }
+
+      .strawberry__bottom {
+        display: none;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 559px) {
+  #about__us {
+    .about-us__container {
+      .about__us-info {
+        .about-us__title {
+          font-size: 30px;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+
+        .about-us__text {
+          font-size: 16px;
+          text-align: center;
+          margin-bottom: 59px;
+        }
+      }
+    }
+  }
+
+  #range {
+    padding: 100px 0;
+
+    .range__title {
+      font-size: 30px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 520px) {
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #ffc4c4e8;
+
+    .menu__list {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0 auto;
+
+      .menu__item {
+        margin: 15px 0;
+
+        .menu__link {
+          font-size: 20px;
+          color: rgb(119, 11, 29);
+        }
+      }
+    }
+  }
+
+  .burger {
+    display: block;
+
+    svg {
+      width: 40px;
+      height: 26px;
+      fill: rgba(197, 31, 61, 0.8);
+    }
+  }
+
+
+  .menu.open {
+    display: flex;
+    align-items: center;
+    z-index: 6;
+  }
+
+  .menu .close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: rgba(197, 31, 61, 0.8);;
+    position: absolute;
+    top: 37px;
+    left: 18px;
+  }
+
+  .main {
+    .main__container {
+      text-align: center;
+
+      .main__action {
+        margin-top: 40px;
+      }
+    }
+  }
+
+
+  .social {
+    text-align: center;
+  }
+
+
+}
+
+@media screen and (max-width: 436px) {
+  .main {
+    .main__container {
+      .main__title {
+        font-size: 32px;
+        line-height: 1.25;
+      }
+
+      .main__text {
+        font-size: 16px;
+      }
+    }
+  }
+
+  #order {
+    padding: 100px 0 77px 0;
+
+    .order__container {
+      .order__form {
+        .order__title {
+          font-size: 30px;
+          line-height: 1.167;
+        }
+
+        .order__text {
+          font-size: 16px;
+          line-height: 1.437;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 424px) {
+  .main {
+    padding: 64px 0 43px 0;
+
+    .main__image {
+      width: 250px;
+
+      &::after, &::before {
+        width: 100px;
+        height: 100px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+
+  .footer {
+    padding: 50px 0 50px 0;
+
+    .footer__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .footer__logo {
+        display: flex;
+        flex-direction: column;
+
+        .footer__logo-image {
+          order: -1;
+        }
+
+        .logo__right {
+          align-self: center;
+          position: absolute;
+          bottom: 0;
+          margin: 0;
+        }
+      }
+
+      .social {
+        order: 3;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+    }
+  }
+
+  .logo__phone {
+    order: 1;
+    margin: 40px 0;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+
+  .main__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .main__text {
+      font-size: 16px;
+      line-height: 1.438;
+      text-align: center;
+    }
+  }
+
+  #about__us {
+    padding: 100px 0 60px 0;
+
+    .about-us__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .about-us__text {
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
+  }
+
+
+  #advantages {
+    padding: 30px 0 100px 0;
+
+    .advantage {
+
+      margin: auto;
+
+      .advantage__title {
+        font-size: 18px;
+      }
+
+      .advantage__text {
+        font-size: 13px;
+      }
+    }
+  }
+
+  #order {
+    .order__container {
+      .order__input {
+        width: 294px;
+      }
+
+      .order__btn {
+        width: 293px;
+      }
+
+      .error__input {
+        width: 293px;
+      }
+
+      .strawberry__top {
+        top: 117px;
+        right: 13px;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 320px) {
+  #advantages {
+    .advantages__container {
+      grid-template-areas: "advantage" "advantage" "advantage" "advantage";
+    }
+  }
+
+  #order {
+    .order__container {
+      .order__form {
+        #form {
+          .order__cart {
+            .order__action {
+              order__btn {
+                min-width: 293px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
